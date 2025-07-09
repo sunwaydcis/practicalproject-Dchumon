@@ -52,19 +52,19 @@
                         <Label text="City" GridPane.rowIndex="3" />
                         <Label text="Postal Code" GridPane.rowIndex="4" />
                         <Label text="Birthday" GridPane.rowIndex="5" />
-                        <Label fx:id="firstNameLabel" text="Label" GridPane.columnIndex="1" />
-                        <Label fx:id="lastNameLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                        <Label fx:id="streetLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                        <Label fx:id="cityLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-                        <Label fx:id="postalCodeLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-                        <Label fx:id="birthdayLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                        <Label fx:id="firstNameLabel" prefHeight="18.0" prefWidth="142.0" text="Label" GridPane.columnIndex="1" />
+                        <Label fx:id="lastNameLabel" prefHeight="18.0" prefWidth="164.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Label fx:id="streetLabel" prefHeight="18.0" prefWidth="168.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Label fx:id="cityLabel" prefHeight="18.0" prefWidth="177.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <Label fx:id="postalCodeLabel" prefHeight="18.0" prefWidth="173.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        <Label fx:id="birthdayLabel" prefHeight="18.0" prefWidth="172.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="5" />
                      </children>
                   </GridPane>
                   <ButtonBar layoutX="162.0" layoutY="226.0" prefHeight="43.0" prefWidth="267.0" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="5.0">
                     <buttons>
                       <Button mnemonicParsing="false" text="New" />
                       <Button mnemonicParsing="false" text="Edit" />
-                      <Button mnemonicParsing="false" text="Delete" />
+                      <Button mnemonicParsing="false" onAction="#handleDeletePerson" text="Delete" />
                     </buttons>
                   </ButtonBar>
                   <TextField fx:id="mytext" layoutX="28.0" layoutY="224.0" />

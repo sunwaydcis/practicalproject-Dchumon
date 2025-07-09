@@ -80,4 +80,8 @@ object MainApp extends JFXApp3:
   val add: (Int, Int) => Int = (a, b) =>
     a + b
 
+  val a: Int = 67
+  extension (d: Int)
+    def area: Double = d * d * 3.142
+  println(14.area)
 end MainApp
