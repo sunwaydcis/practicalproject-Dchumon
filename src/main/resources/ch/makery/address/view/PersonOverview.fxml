@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<AnchorPane prefHeight="300.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.address.view.PersonOverviewController">
+<AnchorPane prefHeight="300.0" prefWidth="600.0" stylesheets="@DarkTheme.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.address.view.PersonOverviewController">
    <children>
       <SplitPane dividerPositions="0.29797979797979796" layoutX="215.0" layoutY="70.0" prefHeight="300.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <items>
@@ -29,7 +29,7 @@
                   </TableView>
                </children>
             </AnchorPane>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" styleClass="background">
                <children>
                   <Label layoutX="21.0" layoutY="31.0" text="Person Details" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="5.0" />
                   <GridPane layoutX="-66.0" layoutY="59.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="30.0">
@@ -60,14 +60,14 @@
                         <Label fx:id="birthdayLabel" prefHeight="18.0" prefWidth="172.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="5" />
                      </children>
                   </GridPane>
-                  <ButtonBar layoutX="162.0" layoutY="226.0" prefHeight="43.0" prefWidth="267.0" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="5.0">
+                  <ButtonBar layoutX="162.0" layoutY="226.0" prefHeight="49.0" prefWidth="341.0" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="5.0">
                     <buttons>
                       <Button mnemonicParsing="false" onAction="#handleNewPerson" text="New" />
                       <Button mnemonicParsing="false" onAction="#handleEditPerson" text="Edit" />
                       <Button mnemonicParsing="false" onAction="#handleDeletePerson" text="Delete" />
                     </buttons>
                   </ButtonBar>
-                  <TextField fx:id="mytext" layoutX="28.0" layoutY="224.0" />
+                  <TextField fx:id="mytext" disable="true" layoutX="-36.0" layoutY="211.0" visible="false" />
                </children>
             </AnchorPane>
         </items>
