@@ -1,6 +1,7 @@
 package ch.makery.address
 
 import ch.makery.address.model.Person
+import ch.makery.address.util.Database
 import ch.makery.address.view.{PersonEditDialogController, PersonOverviewController}
 import javafx.fxml.FXMLLoader
 import scalafx.application.JFXApp3
@@ -109,10 +110,15 @@ object MainApp extends JFXApp3:
   def add4(a: Int)(implicit c: Int) = a + c
   def add5(a: Int)(implicit d: Int) = a + d
   
-  println(add3(4)(9))
+  println(add3)
   println(add4(4)(9))
   println(add5(4)(9))
   
+  val mystring =
+    s""" Hello
+        !${add5(5)}""".stripMargin
+  
+  List(1,2,3,4,5).map(x => x+1)
   
 
 end MainApp

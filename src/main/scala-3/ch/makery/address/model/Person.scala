@@ -15,7 +15,7 @@ class Person (val firstNameS : String, val lastNameS : String) extends Database 
   var postalCode = IntegerProperty(1234)
   var city       = new StringProperty("some city")
   var date       = ObjectProperty[LocalDate](LocalDate.of(1999, 2, 21))
-  var id         : ObjectProperty[Option[Int]] = ObjectProperty[Option[Int]](None)
+  var id: ObjectProperty[Option[Int]] = ObjectProperty[Option[Int]](None)
 
   def save() : Try[Int] =
     if (!(isExist)) then
@@ -64,16 +64,15 @@ class Person (val firstNameS : String, val lastNameS : String) extends Database 
       case None => false
 
 
-
 object Person extends Database:
   def apply (
-            firstNameS : String,
-            lastNameS : String,
-            streetS : String,
-            postalCodeI : Int,
-            cityS : String,
-            dateS : String
-            id: Option[Int] = None
+              firstNameS : String,
+              lastNameS : String,
+              streetS : String,
+              postalCodeI : Int,
+              cityS : String,
+              dateS : String,
+              id: Option[Int] = None
             ) : Person =
 
     new Person(firstNameS, lastNameS) :
